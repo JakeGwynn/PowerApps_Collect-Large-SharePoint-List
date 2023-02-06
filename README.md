@@ -28,7 +28,7 @@ The PowerApp contains the formula that allows collection of more than 2000 rows 
 2. Index "ListID" column in SharePoint List
 
 ### PowerApps/Power Automate Solution
-1. Import solution
+1. Import solution file "LargeSharePointListCollection_1_0_0_4.zip" into a Power Platform environment (default is okay).
 2. Open each Power Automate flow in the solution  ("Add ListID to SPO List Item When Created" and "Update ListID for all SPO List Items") and perform the following tasks:
   1. Turn the Flow on (Flows are automatically turned off when importing a solution)
 	2. Edit each flow
