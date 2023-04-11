@@ -34,14 +34,14 @@ The PowerApp contains the formula that allows collection of more than 2000 rows 
 ### PowerApps/Power Automate Solution
 1. Import solution file "LargeSharePointListCollection_1_0_0_4.zip" into a Power Platform environment (default is okay).
 2. Open each Power Automate flow in the solution  ("Add ListID to SPO List Item When Created" and "Update ListID for all SPO List Items") and perform the following tasks:
-  1. Turn the Flow on (Flows are automatically turned off when importing a solution)
+	1. Turn the Flow on (Flows are automatically turned off when importing a solution)
 	2. Edit each flow
 		1. Update connection reference for SharePoint connection
 		2. Update all SharePoint triggers & actions to point to your large SharePoint List
 3. Open the "Collect Large SPO Lists" PowerApp in Edit Mode and perform the following tasks:
-  1. Connect the PowerApp to your large SPO List
-  2. Open the "LoadLargeCollection Screen"
-    1. Open the 'OnSelect' property of button "btnLoad_colAllRecords"
-      1. Find and Replace all instances of 'Large SPO List' with the name of your large SPO list
-    c. Select "btnLoad_colAllRecords" to test collecting all SPO list items into a collection called "colAllRecords".
+	  1. Connect the PowerApp to your large SPO List
+	  2. Open the "LoadLargeCollection Screen"
+		    1. Open the 'OnSelect' property of button "btnLoad_colAllRecords"
+			      1. Find and Replace all instances of 'Large SPO List' with the name of your large SPO list
 4. Ensure that your PowerApp delegation item limit is set to 2000 records. 
+5. Select "btnLoad_colAllRecords" to test collecting all SPO list items into a collection called "colAllRecords".
