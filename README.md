@@ -21,6 +21,10 @@ This flow can be used to update the ListID for all existing rows in a SharePoint
 ### PowerApp "Collect Large SPO Lists"
 The PowerApp contains the formula that allows collection of more than 2000 rows of a SharePoint list. The formula is contained in the btnLoad_colAllRecords and will load all of the list items from a single list into a PowerApps collection called "colAllRecords"
 
+```diff
+- The PowerApp delegation item limit must be set to 2000 records.
+```
+
 ## Solution Configuration
 
 ### SharePoint List
@@ -40,3 +44,4 @@ The PowerApp contains the formula that allows collection of more than 2000 rows 
     1. Open the 'OnSelect' property of button "btnLoad_colAllRecords"
       1. Find and Replace all instances of 'Large SPO List' with the name of your large SPO list
     c. Select "btnLoad_colAllRecords" to test collecting all SPO list items into a collection called "colAllRecords".
+4. Ensure that your PowerApp delegation item limit is set to 2000 records. 
